@@ -1,0 +1,15 @@
+{
+  "short_name": "Coverks Screen",
+  "name": "Coverks Screen App",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "75x78",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#fecc32"
+}
