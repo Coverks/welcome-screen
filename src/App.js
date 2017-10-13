@@ -1,16 +1,28 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
-  render() {
+    state = {
+        counter: 1,
+    };
 
-    return (
-      <div className="App">
-          <h1 className="App-title">Coverks</h1>
+    buttonClick = () => {
+        this.setState((prevState, props) => {
+            return {counter: prevState.counter + 1};
+        });
 
-      </div>
-    );
-  }
+    };
+
+    render() {
+
+        return (
+            <div className="App">
+                <h1 className="App-title">Coverks</h1>
+                <p className="text">{this.state.counter}</p>
+                <button onClick={this.buttonClick}>Press me!</button>
+            </div>
+        );
+    }
 }
 
 export default App;
