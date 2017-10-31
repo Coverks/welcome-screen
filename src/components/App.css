@@ -1,0 +1,17 @@
+.App {
+	text-align: center;
+	background-color: #ffd039;
+}
+
+.App h1 {
+	color: #fff;
+	font-size: 200px;
+}
+
+video {
+	width: 100%;
+}
+
+.section {
+	height: 640px;
+}
