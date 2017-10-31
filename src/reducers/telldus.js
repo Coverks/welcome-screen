@@ -1,7 +1,7 @@
 import {
-	FETCH_TEMPERATURE,
-	FETCH_TEMPERATURE_FAILURE,
-	FETCH_TEMPERATURE_SUCCESS,
+	FETCH_ACTIVITIES,
+	FETCH_ACTIVITIES_FAILURE,
+	FETCH_ACTIVITIES_SUCCESS,
 } from '../actions';
 
 const INITIAL_STATE = {
@@ -18,9 +18,9 @@ const INITIAL_STATE = {
 export default function( state = INITIAL_STATE, action ) {
 	let error;
 	console.log( action );
-	switch ( 'action', action.type ) {
+	switch ( action.type ) {
 
-		case FETCH_TEMPERATURE:
+		case FETCH_ACTIVITIES:
 			return {
 				...state,
 				sensors: {
@@ -30,7 +30,7 @@ export default function( state = INITIAL_STATE, action ) {
 				}
 			};
 
-		case FETCH_TEMPERATURE_SUCCESS:
+		case FETCH_ACTIVITIES_FAILURE:
 			return {
 				...state,
 				sensors: {
@@ -44,7 +44,7 @@ export default function( state = INITIAL_STATE, action ) {
 				}
 			};
 
-		case FETCH_TEMPERATURE_FAILURE:
+		case FETCH_ACTIVITIES_SUCCESS:
 			error = action.payload.data || { message: action.payload.message };
 			return {
 				...state,
