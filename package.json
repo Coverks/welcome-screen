@@ -22,7 +22,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": "^22.4.3"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
